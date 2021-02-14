@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/edusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_editbackground"
+            android:drawableStart="@drawable/user"
+            android:drawablePadding="10dp"
+            android:hint="username"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/edpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/login_editbackground"
+            android:drawableStart="@drawable/lock"
+            android:drawablePadding="10dp"
+            android:hint="password"
+            android:inputType="textWebPassword"
+            android:padding="10dp" />
+        <Button
+            android:id="@+id/btnlogin"
+            android:textAllCaps="false"
+            android:textSize="21sp"
+            android:text="Log in"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvsignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have account"
+            android:padding="15dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="21sp"/>
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
